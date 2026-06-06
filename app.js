@@ -5,7 +5,7 @@ let currentCategory = 'all';
 // ===== 加载数据 =====
 async function loadPlugins() {
   try {
-    const res = await fetch('plugins/plugins.json');
+    const res = await fetch('plugins.json');
     const data = await res.json();
     plugins = data.plugins;
     renderPlugins(plugins);
